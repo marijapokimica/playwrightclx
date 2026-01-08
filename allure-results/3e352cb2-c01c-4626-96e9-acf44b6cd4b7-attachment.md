@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e6]
+      - navigation [ref=e9]:
+        - menubar
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - 'form "Welcome E-Banking Helpdesk 0800 12 34 56  CLX.E-Banking 2.0 You have left MDB E-Banking. We recommend that you carry out the following security measures: Delete the browser cache since certain browsers save data to the hard drive. If you printed during your E-Banking session, delete the files in your temporary folder. You can find more pieces of information in the FAQs of our home page. Continue to Home page Login" [ref=e14]':
+          - generic [ref=e15]:
+            - grid [ref=e17]:
+              - row "Welcome" [ref=e18]:
+                - gridcell "Welcome" [ref=e19]
+              - row "E-Banking Helpdesk 0800 12 34 56" [ref=e20]:
+                - gridcell "E-Banking Helpdesk" [ref=e21]
+                - gridcell "0800 12 34 56" [ref=e22]
+            - text:  
+            - generic: 
+            - text:    
+            - alert " CLX.E-Banking 2.0" [ref=e23]:
+              - heading " CLX.E-Banking 2.0" [level=1] [ref=e25]
+              - alert [ref=e26]:
+                - grid [ref=e27]:
+                  - 'row "You have left MDB E-Banking. We recommend that you carry out the following security measures: Delete the browser cache since certain browsers save data to the hard drive. If you printed during your E-Banking session, delete the files in your temporary folder. You can find more pieces of information in the FAQs of our home page." [ref=e28]':
+                    - 'gridcell "You have left MDB E-Banking. We recommend that you carry out the following security measures: Delete the browser cache since certain browsers save data to the hard drive. If you printed during your E-Banking session, delete the files in your temporary folder. You can find more pieces of information in the FAQs of our home page." [ref=e29]':
+                      - text: You have left MDB E-Banking.
+                      - text: "We recommend that you carry out the following security measures:"
+                      - list [ref=e30]:
+                        - listitem [ref=e31]: Delete the browser cache since certain browsers save data to the hard drive.
+                        - listitem [ref=e32]: If you printed during your E-Banking session, delete the files in your temporary folder.
+                        - listitem [ref=e33]: You can find more pieces of information in the FAQs of our home page.
+                  - row "Continue to" [ref=e34]:
+                    - gridcell "Continue to" [ref=e35]
+                  - row "Home page" [ref=e36]:
+                    - gridcell "Home page" [ref=e37]:
+                      - link "Home page" [ref=e38] [cursor=pointer]:
+                        - /url: https://www.crealogix.com
+                  - row "Login" [ref=e39]:
+                    - gridcell "Login" [ref=e40]:
+                      - link "Login" [ref=e41] [cursor=pointer]:
+                        - /url: /ebankingLogin/login
+            - text:                                                                  
+        - 'form "Welcome E-Banking Helpdesk 0800 12 34 56  CLX.E-Banking 2.0 You have left MDB E-Banking. We recommend that you carry out the following security measures: Delete the browser cache since certain browsers save data to the hard drive. If you printed during your E-Banking session, delete the files in your temporary folder. You can find more pieces of information in the FAQs of our home page. Continue to Home page Login"'
+  - text:  
+  - contentinfo "Site links" [ref=e42]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - link "Security" [ref=e46] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Legal info" [ref=e47] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Accessibility" [ref=e48] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Privacy & cookie policy" [ref=e49] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Contact us" [ref=e50] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+      - generic [ref=e51]: © Copyright CREALOGIX AG 2026
+  - text:     
+```
