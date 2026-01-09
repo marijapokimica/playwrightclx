@@ -7,7 +7,8 @@ export class Login {
     private readonly password: Locator;
     private readonly nextToLogin: Locator;
     private readonly loginPopUpNext: Locator;
-    private readonly startEbanking: Locator
+    private readonly startEbanking: Locator;
+    private readonly errorMask: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -16,6 +17,7 @@ export class Login {
         this.nextToLogin = page.locator("#submit");
         this.loginPopUpNext = page.locator("#loginPopupButtonNext");
         this.startEbanking = page.locator('#login');
+        this.errorMask = page.locator('#errorPopupMask');
     }
 
     async inputUserNameAndPassword(username: string, password: string) {
@@ -31,8 +33,17 @@ export class Login {
         await this.loginPopUpNext.click();
     }
 
-
     async startEBanking() {
+        // Dismiss blocking overlay if present (e.g., security popup mask)
+        if (await this.errorMask.isVisible().catch(() => false)) {
+            const nextButton = this.page.getByRole('button', { name: /Next/i });
+            if (await nextButton.isVisible().catch(() => false)) {
+                await nextButton.click();
+            }
+            await this.errorMask.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => { });
+        }
+
+        await this.startEbanking.waitFor({ state: 'visible' });
         await this.startEbanking.click();
     }
 

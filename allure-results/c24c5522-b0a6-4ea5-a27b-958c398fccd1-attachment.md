@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e6]
+      - navigation [ref=e9]:
+        - menubar
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - form "Welcome E-Banking Helpdesk 0800 12 34 56 Your last login Thursday, 8 Jan 2026 14:18:01 CET Move  More security with logout The last E-Banking session didn't come to an end with a click on the logout link. We recommend you to click first on the logout link and then close the browser window to end the E-Banking session. Next  CLX.E-Banking 2.0 Welcome Freddy Hinz You have logged in successfully. If date and time of the last login shown above are not correct or if you need assistance, please contact us. By logging in you accept the E-Banking Terms and Conditions of MDB Ltd., dated 18.09.2022. Logout Start E-Banking" [ref=e14]:
+          - generic [ref=e15]:
+            - grid [ref=e17]:
+              - row "Welcome" [ref=e18]:
+                - gridcell "Welcome" [ref=e19]
+              - row "E-Banking Helpdesk 0800 12 34 56" [ref=e20]:
+                - gridcell "E-Banking Helpdesk" [ref=e21]
+                - gridcell "0800 12 34 56" [ref=e22]
+              - row "Your last login Thursday, 8 Jan 2026 14:18:01 CET" [ref=e23]:
+                - gridcell "Your last login" [ref=e24]
+                - gridcell "Thursday, 8 Jan 2026 14:18:01 CET" [ref=e25]
+            - alert " More security with logout" [ref=e26]:
+              - generic [ref=e28]:
+                - button "Move" [ref=e29]
+                - heading " More security with logout" [level=1] [ref=e30]
+              - generic [ref=e32]:
+                - generic [ref=e35]:
+                  - text: The last E-Banking session didn't come to an end with a click on the logout link.
+                  - text: We recommend you to click first on the logout link and then close the browser window to end the E-Banking session.
+                - button "Next" [ref=e38] [cursor=pointer]:
+                  - generic [ref=e39]: Next
+            - text: 
+            - generic: 
+            - text:  
+            - alert " CLX.E-Banking 2.0" [ref=e40]:
+              - heading " CLX.E-Banking 2.0" [level=1] [ref=e42]
+              - alert [ref=e43]:
+                - grid [ref=e44]:
+                  - row "Welcome Freddy Hinz" [ref=e45]:
+                    - gridcell "Welcome Freddy Hinz" [ref=e46]
+                  - row "You have logged in successfully. If date and time of the last login shown above are not correct or if you need assistance, please contact us." [ref=e47]:
+                    - gridcell "You have logged in successfully. If date and time of the last login shown above are not correct or if you need assistance, please contact us." [ref=e48]:
+                      - paragraph [ref=e49]: You have logged in successfully.
+                      - paragraph [ref=e50]: If date and time of the last login shown above are not correct or if you need assistance, please contact us.
+                  - row "By logging in you accept the E-Banking Terms and Conditions of MDB Ltd., dated 18.09.2022." [ref=e51]:
+                    - text: 
+                    - gridcell "By logging in you accept the E-Banking Terms and Conditions of MDB Ltd., dated 18.09.2022." [ref=e52]:
+                      - generic [ref=e53]:
+                        - text: By logging in you accept the
+                        - link "E-Banking Terms and Conditions" [ref=e54] [cursor=pointer]:
+                          - /url: http://www.crealogix.ch/e-banking-bedingungen
+                        - text: of MDB Ltd., dated 18.09.2022.
+              - generic [ref=e56]:
+                - button "Logout" [ref=e57] [cursor=pointer]:
+                  - generic [ref=e58]: Logout
+                - button "Start E-Banking" [active] [ref=e59] [cursor=pointer]:
+                  - generic [ref=e60]: Start E-Banking
+            - text:                                                                   
+        - form "Welcome E-Banking Helpdesk 0800 12 34 56 Your last login Thursday, 8 Jan 2026 14:18:01 CET Move  More security with logout The last E-Banking session didn't come to an end with a click on the logout link. We recommend you to click first on the logout link and then close the browser window to end the E-Banking session. Next  CLX.E-Banking 2.0 Welcome Freddy Hinz You have logged in successfully. If date and time of the last login shown above are not correct or if you need assistance, please contact us. By logging in you accept the E-Banking Terms and Conditions of MDB Ltd., dated 18.09.2022. Logout Start E-Banking"
+  - text:  
+  - contentinfo "Site links" [ref=e61]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - link "Security" [ref=e65] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Legal info" [ref=e66] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Accessibility" [ref=e67] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Privacy & cookie policy" [ref=e68] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Contact us" [ref=e69] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+      - generic [ref=e70]: © Copyright CREALOGIX AG 2026
+  - text:     
+```

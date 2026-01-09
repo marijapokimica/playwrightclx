@@ -12,8 +12,10 @@ test.beforeEach(async ({ page }) => {
     await page.goto(config.appUrl);
 });
 
-test('@master clx test payment', async ({page }) => {
+test('@master clx test payment', async ({ page }) => {
     const pom = new PageObjectManager(page);
+    const beneficiaryName = RandomDataUtil.fullName();
+
     await pom.login.login(config.username, config.password);
     await pom.dashboard.openPayments();
     await pom.dashboard.openNewPayment();
@@ -21,7 +23,7 @@ test('@master clx test payment', async ({page }) => {
     await pom.singlePaymentForm.selectDomesticPayment();
     await pom.singlePaymentEntry.typeCreditAccount(config.creditAccount);
     await pom.singlePaymentEntry.typeAmount("10");
-    await pom.singlePaymentEntry.typeBeneficiaryName(RandomDataUtil.fullName())
+    await pom.singlePaymentEntry.typeBeneficiaryName(beneficiaryName);
     await pom.singlePaymentEntry.typeBeneficiaryStreet(RandomDataUtil.street());
     await pom.singlePaymentEntry.typeBeneficiaryHouseNumber(RandomDataUtil.buildingNumber());
     await pom.singlePaymentEntry.typeBeneficiaryPostCode(RandomDataUtil.postcode());
@@ -31,6 +33,11 @@ test('@master clx test payment', async ({page }) => {
     await pom.singlePaymentEntry.pressSend();
     await pom.confirmPaymentPage.pressConfirm();
     await pom.paymentSubmittedPopup.pressOKSubmitted();
-})
+
+
+    await pom.paymentOverview.waitForVisible();
+   const found = await pom.paymentOverview.hasRow(beneficiaryName);
+        expect(found).toBeTruthy();
+});
 
 
