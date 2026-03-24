@@ -40,7 +40,8 @@ export class Login {
             if (await nextButton.isVisible().catch(() => false)) {
                 await nextButton.click();
             }
-            await this.errorMask.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => { });
+            await this.errorMask.waitFor({ state: 'hidden', timeout: 5000 })
+                .catch(e => console.log('Mask did not hide:', e));
         }
 
         await this.startEbanking.waitFor({ state: 'visible' });

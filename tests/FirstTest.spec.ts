@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto(config.appUrl);
 });
 
-test('@master clx test payment', async ({ page }) => {
+test('@master clx test domestic payment', async ({ page }) => {
     const pom = new PageObjectManager(page);
     const beneficiaryName = RandomDataUtil.fullName();
 
