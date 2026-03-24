@@ -1,2 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1414","clx test payment","chromium","2026-01-06","passed","2026-01-06","","FirstTest.spec.ts","",""
+"","23782","clx test payment","chromium","2026-01-07","passed","2026-01-07","","FirstTest.spec.ts","",""
+"","374950","@master clx test payment","chromium","2026-01-09","passed","2026-01-09","","FirstTest.spec.ts","",""
+"","31831","@master clx test domestic payment","chromium","2026-03-24","passed","2026-03-24","","FirstTest.spec.ts","",""

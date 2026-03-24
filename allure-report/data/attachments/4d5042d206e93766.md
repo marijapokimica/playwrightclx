@@ -1,0 +1,200 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "Jump to page content":
+      - /url: "#skipNavigation"
+    - banner [ref=e5]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - text: Logged in as
+          - link "Freddy Hinz" [ref=e10]:
+            - generic [ref=e11]: Freddy Hinz
+            - text:       
+        - button "Logout" [ref=e12] [cursor=pointer]: 
+      - link "Image of the CREALOGIX E-Banking AG" [ref=e14] [cursor=pointer]:
+        - /url: https://www.crealogix.com
+      - generic [ref=e16]:
+        - navigation [ref=e17]:
+          - menubar [ref=e18]:
+            - menuitem "Product Order" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]: Product Order
+            - menuitem "DASHBOARD" [ref=e21] [cursor=pointer]:
+              - generic [ref=e22]: DASHBOARD
+            - menuitem "FINANCES" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]: FINANCES
+            - menuitem "PAYMENTS" [ref=e25] [cursor=pointer]:
+              - generic [ref=e26]: PAYMENTS
+            - menuitem "TRADING" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: TRADING
+            - menuitem "SERVICES" [ref=e29] [cursor=pointer]:
+              - generic [ref=e30]: SERVICES
+            - menuitem "Notifications" [ref=e31] [cursor=pointer]:
+              - generic "Notifications" [ref=e32]:
+                - generic [ref=e34]: "34"
+            - menuitem "Favourites" [ref=e35] [cursor=pointer]:
+              - generic [ref=e37]: 
+        - text:                                                 
+    - text: ✕
+    - main [ref=e40]:
+      - generic [ref=e41]:
+        - heading "Back to payments overview  Swiss domestic payment" [level=1] [ref=e43]:
+          - button "Back to payments overview" [ref=e44] [cursor=pointer]:
+            - generic [ref=e46]:
+              - generic [ref=e47]: 
+              - generic [ref=e49]: New payment
+          - button " Swiss domestic payment" [ref=e54]:
+            - generic [ref=e56]:
+              - generic [ref=e57]: 
+              - generic [ref=e59]: Swiss domestic payment
+        - text:                                                                                                   
+        - generic [ref=e66]:
+          - text:                                               
+          - generic [ref=e67]:
+            - text:   
+            - heading " Swiss domestic payment" [level=2] [ref=e68]
+            - text:                 
+          - heading "Payment details" [level=2] [ref=e70]
+          - text: 
+          - group "Payment details" [ref=e71]:
+            - grid [ref=e72]:
+              - text:   
+              - row "Credit account CH11 0078 1001 4091 5150 1" [ref=e73]:
+                - rowheader "Credit account" [ref=e74]:  Credit account
+                - gridcell "CH11 0078 1001 4091 5150 1":
+                  - combobox "Credit account" [ref=e76]: CH11 0078 1001 4091 5150 1
+              - row "Amount 10.00 CHF " [ref=e77]:
+                - rowheader "Amount" [ref=e78]:  Amount
+                - gridcell "10.00 Amount":
+                  - textbox "Amount" [ref=e79]: "10.00"
+                  - generic [ref=e80]:
+                    - generic "Amount":
+                      - combobox "Currency" [ref=e81]: CHF  
+                      - button "" [ref=e82] [cursor=pointer]:
+                        - generic [ref=e83]: 
+              - text:   
+          - heading "Beneficiary details" [level=2] [ref=e85]
+          - group "Beneficiary details" [ref=e86]:
+            - grid [ref=e87]:
+              - text:  
+              - row "Bank name ST. GALLER KANTONALBANK AG 9001 ST. GALLEN" [ref=e88]:
+                - rowheader "Bank name" [ref=e89]
+                - gridcell "ST. GALLER KANTONALBANK AG 9001 ST. GALLEN" [ref=e90]:
+                  - textbox "Bank name" [ref=e91]: ST. GALLER KANTONALBANK AG 9001 ST. GALLEN
+              - text: 
+              - row "Beneficiary name Marija Poki" [ref=e92]:
+                - rowheader "Beneficiary name" [ref=e93]:  Beneficiary name
+                - gridcell "Marija Poki" [ref=e94]:
+                  - textbox "Beneficiary name" [ref=e95]: Marija Poki
+              - text: 
+              - row "Street / House number Baba Visnjina 7" [ref=e96]:
+                - rowheader "Street / House number" [ref=e97]:
+                  - text: 
+                  - generic [ref=e98]: Street / House number
+                - gridcell "Baba Visnjina 7" [ref=e99]:
+                  - textbox "Street" [ref=e100]: Baba Visnjina
+                  - textbox "House number" [ref=e101]: "7"
+              - text: 
+              - alert [ref=e102]:
+                - generic [ref=e105]:
+                  - heading " Town" [level=2] [ref=e106]:
+                    - text: 
+                    - generic [ref=e108]: Town
+                  - generic [ref=e110]: Please enter city.
+              - row "Postcode / town 8004 Brankovina" [ref=e112]:
+                - rowheader "Postcode / town" [ref=e113]:
+                  - text: 
+                  - generic [ref=e114]: Postcode / town
+                - gridcell "8004 Brankovina" [ref=e115]:
+                  - textbox "Postcode" [ref=e116]: "8004"
+                  - textbox "Town" [active] [ref=e117]: Brankovina
+              - row "Country Switzerland " [ref=e118]:
+                - rowheader "Country" [ref=e119]:  Country
+                - gridcell "Switzerland ":
+                  - generic [ref=e120]:
+                    - generic:
+                      - combobox "Country" [ref=e121]: Switzerland 
+                      - button "" [ref=e122] [cursor=pointer]:
+                        - generic [ref=e123]: 
+              - row "Beneficiary reference" [ref=e124]:
+                - rowheader "Beneficiary reference" [ref=e125]:
+                  - text: 
+                  - generic [ref=e126]: Beneficiary reference
+                - gridcell [ref=e127]:
+                  - generic [ref=e128]:
+                    - textbox "First field of the beneficiary reference" [ref=e130]:
+                      - /placeholder: Beneficiary reference
+                    - textbox "Second field of the beneficiary reference" [ref=e132]:
+                      - /placeholder: Beneficiary reference
+                    - textbox "Third field of the beneficiary reference" [ref=e134]:
+                      - /placeholder: Beneficiary reference
+                    - textbox "Fourth field of the beneficiary reference" [ref=e136]:
+                      - /placeholder: Beneficiary reference
+          - heading "Payment instructions" [level=2] [ref=e138]
+          - group "Payment instructions" [ref=e139]:
+            - grid [ref=e140]:
+              - row "Debit account 1501 CHF / CHF 19'706'006.25 / Current account / Freddy Hinz " [ref=e141]:
+                - rowheader "Debit account" [ref=e142]:  Debit account
+                - gridcell "1501 CHF / CHF 19'706'006.25 / Current account / Freddy Hinz ":
+                  - generic [ref=e143]:
+                    - generic:
+                      - combobox "Debit account" [ref=e144]: 1501 CHF / CHF 19'706'006.25 / Current account / Freddy Hinz  
+                      - button "" [ref=e145] [cursor=pointer]:
+                        - generic [ref=e146]: 
+              - row "Execution date 08.01.2026 " [ref=e147]:
+                - rowheader "Execution date" [ref=e148]:  Execution date
+                - gridcell "08.01.2026 ":
+                  - generic [ref=e149]:
+                    - textbox "Execution date" [ref=e150]: 08.01.2026
+                    - button "" [ref=e151] [cursor=pointer]:
+                      - generic [ref=e152]: 
+              - row "Instant Payment " [ref=e153]:
+                - rowheader "Instant Payment" [ref=e154]:  Instant Payment
+                - gridcell "" [ref=e155]:
+                  - checkbox "" [ref=e156]:
+                    - generic [ref=e157] [cursor=pointer]: 
+              - row "Debit reference" [ref=e158]:
+                - rowheader "Debit reference" [ref=e159]:  Debit reference
+                - gridcell [ref=e160]:
+                  - textbox "Debit reference" [ref=e161]
+              - text:  
+          - text:                                        
+          - grid [ref=e162]:
+            - generic:           
+            - text:                             
+            - row "Advanced payment options Advanced payment options" [ref=e163]:
+              - gridcell "Advanced payment options":
+                - button "Advanced payment options" [ref=e164] [cursor=pointer]
+              - heading "Advanced payment options" [level=2] [ref=e165]
+            - text:                            
+            - row "Save as new standing order" [ref=e166]:
+              - gridcell:
+                - switch [ref=e167]:
+                  - switch [ref=e168] [cursor=pointer]:
+                    - checkbox [ref=e169]
+              - heading "Save as new standing order" [level=2] [ref=e171]
+          - text:   
+          - generic [ref=e173]:
+            - button "Cancel" [ref=e174] [cursor=pointer]:
+              - generic [ref=e175]: Cancel
+            - button "Send" [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]: Send
+        - text:                                                       
+    - text:                                                                                                                                                             
+  - contentinfo "Site links" [ref=e179]:
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - link "Security" [ref=e183] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Legal info" [ref=e184] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Accessibility" [ref=e185] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Privacy & cookie policy" [ref=e186] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+        - link "Contact us" [ref=e187] [cursor=pointer]:
+          - /url: https://www.crealogix.com
+      - generic [ref=e188]: © Copyright CREALOGIX AG 2026
+  - text: 
+```

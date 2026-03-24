@@ -5,7 +5,7 @@ export class TestConfig{
    
 
     //valid login credentials
-    username= "1532691501";
+    username= "1544751501";
     password = "welcome";
 
     //product details
